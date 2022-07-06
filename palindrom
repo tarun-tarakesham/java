@@ -1,0 +1,23 @@
+import java.util.*;
+public class Palindrom 
+{
+	public static void main(String args[])
+	{
+		String reverse="",word;
+		Scanner sc=new Scanner(System.in);
+		word=sc.nextLine();
+		for(int i=word.length()-1;i!=-1;i-=1)
+		{
+			reverse+=word.charAt(i);
+		}
+		if(word.equals(reverse))
+		{
+           System.out.println("the given string/number is palindrom");
+		}
+		else
+		{
+			System.out.println("thye given string is not palindrom");
+		}
+
+	}
+}
