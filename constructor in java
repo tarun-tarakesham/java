@@ -1,0 +1,46 @@
+class Pen{
+	String color;
+	String type;
+	Pen()
+	{
+		System.out.println("default constructor:");                            //default constructor:
+		System.out.println("Pen is writing very good");
+	}
+	Pen(String color,String type)
+	{
+		System.out.println("parametarised constructor:");                        //parametarised constructor:
+		System.out.println("color: "+color+"type: "+type);
+	}
+	Pen(Pen p1)
+	{
+		System.out.println("copy counstructor");                               //copy counstructor
+		System.out.println(p1.color);
+		System.out.println(p1.type);
+	}
+}
+public class oops{
+	public static void main(String args[])
+	{
+	
+	Pen pen2=new Pen();//default constructor
+	pen2.color="red";
+	pen2.type="ball pen";
+	System.out.println();
+	
+	Pen pen3=new Pen(pen2);//copy constructor
+	System.out.println();
+	
+	Pen pen4=new Pen("green","gel/blue");//paramatrised constructor
+
+}
+}
+output:
+default constructor:
+Pen is writing very good
+
+copy counstructor
+red
+ball pen
+
+parametarised constructor:
+color: greentype: gel/blue
