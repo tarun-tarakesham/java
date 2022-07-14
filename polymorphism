@@ -1,0 +1,41 @@
+class Pen{
+	String color;
+	String type;
+	
+	public void printpendatails()
+	{
+		System.out.println("pen details:");
+		
+	}
+	public void printpendatails(String color,String type)
+	{
+		System.out.println("color of the pen "+color);
+		System.out.println("type of the pen "+type);
+	}
+	public void printpendatails(String color)
+	{
+		System.out.println("color of the pen "+this.color);
+		
+	}
+
+}
+public class oops{
+	public static void main(String args[])
+	{
+	Pen pen1=new Pen();
+	pen1.color="blue";
+	pen1.type="gel";
+	pen1.printpendatails();
+	pen1.printpendatails("tara");
+	pen1.printpendatails("hbbha");
+	pen1.printpendatails("tara","bjkhj");
+	
+
+}
+}
+output:
+pen details:
+color of the pen blue                         //if you put this.color
+color of the pen blue                        //if you put this.color
+color of the pen tara                         //if you don't put this
+type of the pen bjkhj
