@@ -1,8 +1,8 @@
 bacics:
 class Pen{
-	String color;
-	String type;
-	public void write(){
+	String color;                                                           //this are properties
+	String type;                                                            //properites
+	public void write(){                                                    //this is a method
 		System.out.println("writing the pen details");
 		System.out.println("color of the pen "+color);
 		System.out.println("type of the pen "+type);
@@ -20,6 +20,44 @@ public class oops{
 	pen2.color="red";
 	pen2.type="ball pen";
 	pen2.write();
+}
+}
+output:
+writing the pen details
+color of the pen blue
+type of the pen gel
+
+
+writing the pen details
+color of the pen red
+type of the pen ball pen
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+class Pen{
+	String color;
+	String type;
+	public void write(){
+		System.out.println("writing the pen details");
+	}
+	public void printpendatails()
+	{
+		System.out.println("color of the pen "+this.color);           //this method
+		System.out.println("type of the pen "+this.type);
+	}
+}
+public class oops{
+	public static void main(String args[])
+	{
+	Pen pen1=new Pen();
+	pen1.color="blue";
+	pen1.type="gel";
+	pen1.write();
+	pen1.printpendatails();
+	System.out.println();
+	Pen pen2=new Pen();
+	pen2.color="red";
+	pen2.type="ball pen";
+	pen2.write();
+	pen2.printpendatails();
 }
 }
 output:
