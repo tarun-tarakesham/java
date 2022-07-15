@@ -1,0 +1,66 @@
+------------------------------using variables and methos---------------------------------------------------
+class A{
+	int a=10;
+	void show()
+	{
+		System.out.println("hi a"+a);
+	}
+
+}
+class B extends A
+{
+	int a=20;
+	void show()
+	{
+		super.show();
+		System.out.println("hi tara"+a);
+		System.out.println(super.a);
+	}
+}
+public class SuuperKey{
+	public static void main(String args[])
+	{
+		B a=new B();
+		a.show();
+	}
+}
+output:
+hi a10
+hi tara20
+10
+
+
+---------------------------------------------- using constructor------------------------------------------------------
+class A{
+	A(){
+		System.out.println("we are in a constructor");
+	}
+	A(int a)
+	{
+		System.out.println("int a"+a);
+	}
+}
+class B extends A{
+	B(){
+		super();
+		System.out.println("we are in B constructor");
+	}
+	B(int b)
+	{
+		super(b);
+		System.out.println("int b"+  b);
+	}
+}
+class C extends B{
+	C(){
+        System.out.println("we are in c constructor");
+	}
+}
+public  class Superkey{
+	public static void main(String args[])
+	{
+
+		C c=new C();
+
+	}
+}
