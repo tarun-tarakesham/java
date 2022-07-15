@@ -1,0 +1,9 @@
+Access Modifiers:
+--------------------------------------------------------------
+Modifiers          Class    Package     Subclass      Global  |
+Public              Yes       Yes         Yes          Yes    |
+private             Yes       Yes         Yes           No    |
+Default             Yes       Yes         No            No    |
+Protected           Yes       No          No             No   |
+---------------------------------------------------------------
+
