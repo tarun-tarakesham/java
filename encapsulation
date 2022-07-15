@@ -1,0 +1,20 @@
+class A{
+	private int value;//data hiding
+	public void set(int x){     //setting value
+		value=x;
+	}
+	public int get()
+	{
+            return value;
+	}
+}
+public class Encapsulation{
+	public static void main(String args[]){
+        A r=new A();
+        //System.out.println(r.value);  //we have to keep it in the comments only because it will show errors due to the int type is prvate
+        r.set(10);
+        System.out.println(r.get());
+	}
+}
+output:
+10
