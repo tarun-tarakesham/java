@@ -1,0 +1,108 @@
+sending parameters through constructor:
+-------------------------------------------------------------------------
+class A{
+	public A(){
+		System.out.println("we are in a constructor");
+	}
+	public A(int a)
+	{
+		System.out.println("int a"+a);
+	}
+}
+class B extends A{
+	public B(){
+		super();                                             //use of super keyword
+		System.out.println("we are in B constructor");
+	}
+	public B(int b)
+	{
+		super(b);                                  //use of super keyword
+		System.out.println("int b"+  b);
+	}
+}
+public  class Superkey{
+	public static void main(String args[])
+	{
+		B b=new B(25);                                    //only change in this place only parametrised constructor
+
+	}
+
+	}
+}
+output:
+int a25
+int b25
+------------------------------------------------------------------------------------------------
+default constructor:
+class A{
+	public A(){
+		System.out.println("we are in a constructor");
+	}
+	public A(int a)
+	{
+		System.out.println("int a"+a);
+	}
+}
+class B extends A{
+	public B(){
+		super();                                                     //use of super keyword
+		System.out.println("we are in B constructor");
+	}
+	public B(int b)
+	{
+		super(b);                                                      //use of super keyword
+		System.out.println("int b"+  b);
+	}
+}
+public  class Superkey{
+	public static void main(String args[])
+	{
+		B b=new B();                                    //only change in this place only default constructor
+
+	}
+}
+output:
+we are in a constructor
+we are in B constructor
+
+
+multiple inheritence:
+class A{
+	A(){
+		System.out.println("we are in a constructor");
+	}
+	A(int a)
+	{
+		System.out.println("int a"+a);
+	}
+}
+class B extends A{
+	B(){
+		super();
+		System.out.println("we are in B constructor");
+	}
+	B(int b)
+	{
+		super(b);
+		System.out.println("int b"+  b);
+	}
+}
+class C extends B{
+	C(){
+        System.out.println("we are in c constructor");
+	}
+}
+public  class Superkey{
+	public static void main(String args[])
+	{
+
+		C c=new C();
+
+	}
+}
+output:
+we are in a constructor
+we are in B constructor
+we are in c constructor
+
+
